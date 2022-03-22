@@ -12,34 +12,34 @@ int main() {
     printf("----- [정준호]  [2020069046] -----\n");
 
     printf("\n[checking values before ptr = &i] \n");
-    printf("value of i == %d\n", i);                                // i 의
-    printf("address of i == %p\n", &i);
-    printf("value of ptr == %p\n", ptr);
-    printf("address of ptr == %p\n", &ptr);
+    printf("value of i == %d\n", i);                                // i 에 들어있는 값 (123)
+    printf("address of i == %p\n", &i);                             // i 의 주소 (a)
+    printf("value of ptr == %p\n", ptr);                            // ptr 에 들어있는 값(주소) (초기화 안되어서 쓰레기값)
+    printf("address of ptr == %p\n", &ptr);                         // ptr 의 주소 (b)
 
 
     ptr = &i;           /* ptr is now holding the address of i */
 
     printf("\n[checking values after ptr = &i] \n");
-    printf("value of i == %d\n", i);
-    printf("address of i == %p\n", &i);
-    printf("value of ptr == %p\n", ptr);
-    printf("address of ptr == %p\n", &ptr);
-    printf("value of *ptr == %d\n", *ptr);
+    printf("value of i == %d\n", i);                                // i 에 들어있는 값 (123)
+    printf("address of i == %p\n", &i);                             // (a)
+    printf("value of ptr == %p\n", ptr);                            // ptr 에 들어있는 주소 = (a)
+    printf("address of ptr == %p\n", &ptr);                         // (b)
+    printf("value of *ptr == %d\n", *ptr);                          // ptr 이 가리키는 변수(i) 의 값 = 123
 
 
     dptr = &ptr;        /* dptr is now holding the address of ptr */
 
     printf("\n[checking values after dptr = &ptr] \n");
-    printf("value of i == %d\n", i);
-    printf("address of i == %p\n", &i);
-    printf("value of ptr == %p\n", ptr);
-    printf("address of ptr == %p\n", &ptr);
-    printf("value of *ptr == %d\n", *ptr);
-    printf("value of dptr == %p\n", dptr);
-    printf("address of dptr == %p\n", &dptr);
-    printf("value of *dptr == %p\n", *dptr);
-    printf("value of **dptr == %d\n", **dptr);
+    printf("value of i == %d\n", i);                                // i 에 들어있는 값 (!23)
+    printf("address of i == %p\n", &i);                             // (a)
+    printf("value of ptr == %p\n", ptr);                            // (a)
+    printf("address of ptr == %p\n", &ptr);                         // (b)
+    printf("value of *ptr == %d\n", *ptr);                          // ptr 이 가리키는 변수(i) 의 값 = 123
+    printf("value of dptr == %p\n", dptr);                          // dptr 은 ptr 의 주소를 갖고 있음 = (b)
+    printf("address of dptr == %p\n", &dptr);                       // dptr 의 주소 (c)
+    printf("value of *dptr == %p\n", *dptr);                        // dptr 이 가리키는 변수(ptr)의 값 = i 의 주소 = (a)
+    printf("value of **dptr == %d\n", **dptr);                      // dptr 이 가리키는, 포인터(ptr)가 가리키는, 변수(i)의 값 = 123
 
 
     *ptr = 7777;        /* changing the value of *ptr */
