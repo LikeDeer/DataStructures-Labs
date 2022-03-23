@@ -6,5 +6,5 @@ void main() {
 
     printf("sizeof(x) = %lu\n", sizeof(x));
     printf("sizeof(*x) = %lu\n", sizeof(*x));
-    printf("sizeof(**x) = %ly\n", sizeof(**x));
+    printf("sizeof(**x) = %lu\n", sizeof(**x));
 }

@@ -10,6 +10,8 @@ void main() {
 
     plist[0] = (int *)malloc(sizeof(int));
 
+    printf("    [----- 정준호 2020069046 -----]\n\n");
+
     printf("list[0] \t= %d\n", list[0]);
     printf("address of list \t= %p\n", list);
     printf("address of list[0] \t= %p\n", &list[0]);

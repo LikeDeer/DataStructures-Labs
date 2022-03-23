@@ -8,7 +8,6 @@ float input[MAX_SIZE], answer;
 int i;
 
 void main(void) {
-
     for (i = 0; i < MAX_SIZE; i++)
         input[i] = i;
 
