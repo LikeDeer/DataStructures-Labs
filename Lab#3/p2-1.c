@@ -11,6 +11,8 @@ void main(void) {
     for (i = 0; i < MAX_SIZE; i++)
         input[i] = i;
 
+    printf("    [----- 정준호 2020069046 -----]\n\n");
+
     /* for checking call by reference */
     printf("address of input = %p\n", input);
 
