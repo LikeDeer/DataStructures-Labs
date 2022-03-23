@@ -22,4 +22,7 @@ void main() {
     printf("address of list[1]      = %p\n", &list[1]);
     printf("value of *(list+1)      = %d\n", *(list + 1));
     printf("address of list+1       = %p\n", list+1);
+
+    printf("---------------------------------------------\n\n");
+    printf("value of *plist]0\      = %d\n", *plist[0]);
 }
