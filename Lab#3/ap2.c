@@ -12,8 +12,8 @@ void main() {
 
     printf("    [----- 정준호 2020069046 -----]\n\n");
 
-    printf("list[0] \t= %d\n", list[0]);
-    printf("address of list \t= %p\n", list);
+    printf("list[0] \t= %d\n", list[0]);                    // list
+    printf("address of list \t= %p\n", list);               // 
     printf("address of list[0] \t= %p\n", &list[0]);
     printf("address of list + 0 \t= %p\n", list+0);
     printf("address of list + 1 \t= %p\n", list+1);
