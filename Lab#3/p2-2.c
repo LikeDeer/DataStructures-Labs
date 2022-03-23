@@ -15,7 +15,7 @@ int main() {
     return 0;
 }
 
-void printf1(int *ptr, int rows) {
+void print1(int *ptr, int rows) {
     /* print out a one-dimensional array using a pointer */
 
     int i;
