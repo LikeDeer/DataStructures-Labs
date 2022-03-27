@@ -16,22 +16,22 @@ void main() {
     printf("    [----- 정준호 2020069046 -----]\n\n");
 
     printf("value of list[0]        = %d\n", list[0]);                  // list[0] = 1
-    printf("address of list[0]      = %p\n", &list[0]);                 // list[0]의 주소 (ㄱ)
+    printf("address of list[0]      = %p\n", &list[0]);                 // list[0]의 주소 (이하 해당 주소값은 (ㄱ))
     printf("value of list           = %p\n", list);                     // 배열명 list = 배열 list의 주소 = list[0]의 주소 (ㄱ)
     printf("address of list (&list) = %p\n", &list);                    // list의 주소는 배열의 시작 주소 = (ㄱ)
 
     printf("---------------------------------------------\n\n");
     printf("value of list[1]        = %d\n", list[1]);                  // list[1] = 100
-    printf("address of list[1]      = %p\n", &list[1]);                 // list[1]의 주소 = list + 1*sizeof(int) = (ㄱ) + 4 = (ㄴ)
-    printf("value of *(list+1)      = %d\n", *(list + 1));              // *(list + 1) = list[1] = 100 (list + 1 = list + 1*sizeof(int)
+    printf("address of list[1]      = %p\n", &list[1]);                 // list[1]의 주소 = list + 1*sizeof(int) = (ㄱ) + 4 (이하 해당 주소값은 (ㄴ))
+    printf("value of *(list+1)      = %d\n", *(list + 1));              // *(list + 1) = list[1] = 100 (list + 1 = list + 1*sizeof(int))
     printf("address of list+1       = %p\n", list+1);                   // (ㄴ)
 
     printf("---------------------------------------------\n\n");
     printf("value of *plist[0]      = %d\n", *plist[0]);                // plist[0]이 가리키는 동적할당된 공간의 값 = 200
-    printf("&plist[0]               = %p\n", &plist[0]);                // plist[0]의 주소 (ㄷ)
+    printf("&plist[0]               = %p\n", &plist[0]);                // plist[0]의 주소 (이하 해당 주소값은 (ㄷ))
     printf("&plist                  = %p\n", &plist);                   // 배열 plist의 주소 = plist[0]의 주소 = (ㄷ)
     printf("plist                   = %p\n", plist);                    // 배열명 plist = 배열 plist의 주소 = (ㄷ)
-    printf("plist[0]                = %p \n", plist[0]);                // 포인터 plist[0]가 갖고있는 값(주소) = 동적 할당된 그 주소
+    printf("plist[0]                = %p \n", plist[0]);                // 포인터 plist[0]가 갖고있는 값(주소) = malloc된 그 주소
     printf("plist[1]                = %p \n", plist[1]);                // 포인터 plist[1]가 갖고있는 값(주소) = 쓰레기값
     printf("plist[2]                = %p \n", plist[2]);                // 포인터 plist[2]가 갖고있는 값(주소) = 쓰레기값
     printf("plist[3]                = %p \n", plist[3]);                // 포인터 plist[3]가 갖고있는 값(주소) = 쓰레기값
